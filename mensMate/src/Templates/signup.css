@@ -1,0 +1,144 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #fff8f8;
+    padding: 50px;
+    border-radius: 20px;
+    position: relative;
+    margin: 50px auto;
+    border: 3px solid rgb(105, 105, 105);
+    box-shadow: 0 5px 20px rgb(195, 195, 195);
+  }
+  
+  .title {
+    font-size: 50px;
+    color:  #7b3d36;
+    font-weight: 900;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 38px;
+    font-family: 'Agbalumo', cursive;
+    font-family: 'Cinzel', serif;
+    font-family: 'Della Respira', serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Italiana', serif;
+    margin: 0px auto;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    left: 0px;
+    background-color:  #FFAAA0;
+  }
+  
+  .title::before {
+    width: 22px;
+    height: 22px;
+    background-color:  #FFAAA0;
+  }
+  
+  .title::after {
+    width: 28px;
+    height: 28px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+    color: rgba(0, 0, 0, 0.822);
+    font-size: 20px;
+    font-family: cursive;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: #7b3d36;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline #7b3d36;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: #995e57;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .submit:hover {
+    background-color: #7b3d36;
+  }
+
+  .login{
+    text-align: center;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }

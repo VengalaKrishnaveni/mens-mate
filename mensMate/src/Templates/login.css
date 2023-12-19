@@ -1,0 +1,82 @@
+.login-form-container {
+    width: 350px;
+    /* height: 500px; */
+    border: 3px solid rgb(206, 206, 206);
+    box-shadow: 0 5px 20px rgb(195, 195, 195);background-color: #fff8f8;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-title {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif; /* Example font */
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333; /* Dark grey for better readability */
+  }
+  
+  .login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .login-input {
+    border-radius: 10px;
+    border: 1px solid #c0c0c0;
+    outline: none;
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+  
+  .login-page-link {
+    text-align: right;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #747474;
+  }
+  
+  .login-page-link-label {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #FFAAA0; /* Example theme color */
+  }
+  
+  .login-form-btn {
+    padding: 12px 15px;
+    border-radius: 10px;
+    background-color:  #995e57;; /* Theme color */
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .login-form-btn:hover {
+    background-color:  #7b3d36; /* Darker shade for hover */
+  }
+  
+  .login-sign-up-label {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #333;
+  }
+  
+  .login-sign-up-link {
+    margin-left: 5px;
+    color: #FFAAA0; /* Theme color */
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
