@@ -1,0 +1,75 @@
+/* ChatPage.css */
+.chat-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chat-history {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 20px;
+}
+
+.chat-entry {
+    margin-bottom: 10px;
+}
+
+.chat-entry p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.chat-entry p.user {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.chat-entry p.bot {
+    margin-left: 20px;
+    color: #555;
+}
+
+.input-area {
+    position: fixed; /* Changed to fixed */
+    bottom: 0; /* Align to bottom */
+    left: 0; /* Align to left */
+    width: 100%; /* Full width */
+    background-color: #333; /* Match the color to the theme */
+    padding: 10px; /* Add some padding */
+    box-sizing: border-box; /* Ensure padding is included in width */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+textarea {
+    width: calc(100% - 60px); /* Adjust width to allow for button */
+    margin-right: 10px; /* Add margin between text area and button */
+    height: 40px; /* Adjust height as per the design */
+    padding: 10px;
+    font-size: 16px;
+    border: none; /* Remove border */
+    border-radius: 20px; /* Rounded borders */
+    background-color: #222; /* Darker background for the text area */
+    color: #fff; /* Light text color */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff; /* Use a contrasting color for the button */
+    border: none;
+    border-radius: 20px; /* Rounded borders for the button */
+    cursor: pointer;
+}
+
+/* Add additional padding to the bottom of the chat history to prevent overlap */
+.chat-history {
+    padding-bottom: 70px; /* Adjusted to prevent overlap with the input area */
+}
